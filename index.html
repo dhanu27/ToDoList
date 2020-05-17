@@ -1,0 +1,35 @@
+<html>
+    <head>
+      <title>To Do list</title>
+      <link rel="stylesheet" type="text/Css" href="style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div id="outer-box">
+           <input id="task" type="text" name="item" placeholder="Type Todo list" onfocus="showbttn()">
+           <button type="submit" id="add-task" class="bttn" ><i class="fa fa-plus-circle"></i></button>
+           <div>
+              <button type="submit" onclick="checkall()" class="bttn2">Complete all tasks</button>
+              <button type="submit" onclick="deleteCompletedtask()" class="bttn2 alignRight">Clear Completed</button>
+           </div>
+           <div id="inner-box">
+            <ul id="task-list">
+                <li>
+                  <input type="checkbox">
+                  <label>Learn how to use</label>
+                  <button type="submit" class="bttn" ><i class="fa fa-times-circle"></i></button>
+                </li>
+                <li>
+                  <input type="checkbox" checked>
+                  <label>Type1</label>
+                  <button type="submit" class="bttn" ><i class="fa fa-times-circle"></i></button>
+                </li>
+            </ul>
+            </div>
+           <hr>
+          <span id="total-task">0</span>
+          <span>tasks are left</span>  
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
